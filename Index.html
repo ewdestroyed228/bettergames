@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>N64.js Emulator</title>
+  <script src="n64js.js"></script>
+</head>
+<body>
+  <canvas id="n64-canvas"></canvas>
+  <script>
+    const n64 = new N64({
+      canvas: document.getElementById('n64-canvas'),
+      rom: 'your_rom.z64' // Replace with your ROM file name
+    });
+
+    n64.start();
+  </script>
+</body>
+</html>
